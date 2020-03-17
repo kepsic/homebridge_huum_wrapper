@@ -13,7 +13,7 @@ Clone the repository
 ```
 git clone https://github.com/kepsic/homebridge_huum_wrapper
 cd homebridge_huum_wrapper
-../bin/python3 setup.py develop
+../bin/python3 setup.py install
 ```
 
 Replace in homebridge_huum_wrapper.ini with your corresponding username and password as used in HUUM.EU app
@@ -27,6 +27,13 @@ Start wrapper
 ```
 ../bin/pserve homebridge_huum_wrapper.ini&
 ```
+
+or with script
+```
+./start.sh&
+```
+
+
 Follow the HomeBridge Installation [manual](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Raspbian)
 
 From plugins section install ``homebridge-thermostat``
